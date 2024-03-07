@@ -1,7 +1,6 @@
-//store URL
+// Store URL
 let url = 'https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json';
 
-// Pending Promise
 const dataPromise = d3.json(url);
 console.log("Data Promise: ", dataPromise);
 
@@ -77,7 +76,7 @@ function init() {
         // Fetch the JSON data and console log it
         d3.json(url).then((data) => {
     
-            // An array of sample objects
+            // Add array of sample objects
             let samples = data.samples;
         
             // Filter data where id = selected value 
@@ -198,5 +197,4 @@ function init() {
     });
 
 }
-// Call the init function
 init();
